@@ -18,7 +18,7 @@ brain Brain;
 
 motor intake = motor(PORT9, ratio6_1, true);  
 motor hook = motor(PORT3, ratio6_1, true);
-motor LF = motor(PORT5, ratio6_1, true);
+motor LF = motor(PORT4, ratio6_1, true);
 motor LB = motor(PORT2, ratio6_1, true);
 motor RF = motor(PORT19, ratio6_1, false);
 motor RB = motor(PORT21, ratio6_1, false);
