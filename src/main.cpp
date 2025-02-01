@@ -30,7 +30,7 @@ controller Controller1;
 digital_out clamp = digital_out (Brain.ThreeWirePort.H ); 
 digital_out sweep= digital_out (Brain.ThreeWirePort.A);
 
-int AutonSelected = 0;
+int AutonSelected = 5;
 int AutonMin = 0;
 int AutonMax = 4;
 bool Clamp_count;
@@ -299,6 +299,9 @@ void pre_auton(void) {
 	else if (AutonSelected==4){
 		Brain.Screen.printAt(10,10,"SKILLS AUTON");
 	}
+	else if (AutonSelected==5){
+		Brain.Screen.printAt(10,10,"NOTHING AUTON");
+	}
 
  while (Gyro.isCalibrating()){ 
   wait(100, msec);
@@ -410,11 +413,11 @@ void autonomous(void) {
 				inchDriveP(-9);  // shake the mobile goal off
 				inchDriveP(12);
 
-
+			case 5:
 
 	
 
-				break;
+			break;
 
 			}
 
